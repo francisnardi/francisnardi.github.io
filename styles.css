@@ -1,165 +1,102 @@
-/* Piano-style for Summary section */
-#summary {
-    background-color: #F8F8F8;
-    padding: 50px;
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
-#summary h1 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-#summary p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.5;
-}
-
-/* Piano-style for Education section */
-#education {
-    background-color: #EAEAEA;
-    padding: 50px;
-}
-
-#education h1 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-#education ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-#education li {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-/* Piano-style for Experience section */
-#experience {
-    background-color: #F8F8F8;
-    padding: 50px;
-}
-
-#experience h1 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-#experience .role {
-    font-size: 24px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-#experience .duration {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-#experience .location {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-#experience .technologies {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-/* Piano-style for Hackathons section */
-#hackathons {
-    background-color: #EAEAEA;
-    padding: 50px;
-}
-
-#hackathons h1 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-#hackathons ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-#hackathons li {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-/* Piano-style for Languages section */
-#languages {
-    background-color: #F8F8F8;
-    padding: 50px;
-}
-
-#languages h1 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-#languages ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-#languages li {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-/* Piano-style for Publications section */
-#publications {
-    background-color: #EAEAEA;
-    padding: 50px;
-}
-
-#publications h1 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-#publications ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-#publications li {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-/* Additional styles */
 .container {
-    max-width: 960px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Navbar */
+nav {
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li a:hover {
+    color: #ccc;
+}
+
+/* Sections */
 section {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+section p {
+    line-height: 1.5;
+}
+
+/* Piano Section Style */
+.piano-section {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.piano-section h2 {
+    color: #333;
+}
+
+/* Bootstrap Overrides */
+.container p {
+    margin-bottom: 10px;
+}
+
+.container ul {
+    padding-left: 20px;
+}
+
+.container li {
+    margin-bottom: 5px;
+}
+
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.container th,
+.container td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.container th {
+    background-color: #f2f2f2;
+}
+
+.container img {
+    max-width: 100%;
 }
