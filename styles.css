@@ -1,91 +1,165 @@
-/* Reset default browser styles */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
+/* Piano-style for Summary section */
+#summary {
+    background-color: #F8F8F8;
+    padding: 50px;
 }
 
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-main h1 {
+#summary h1 {
     font-size: 32px;
-    margin-bottom: 20px;
+    color: #333;
+    margin-bottom: 30px;
 }
 
-main ul {
-    list-style: none;
+#summary p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
 }
 
-main li {
-    margin-bottom: 20px;
+/* Piano-style for Education section */
+#education {
+    background-color: #EAEAEA;
+    padding: 50px;
 }
 
-main h3 {
-    font-size: 24px;
+#education h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#education ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#education li {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
     margin-bottom: 10px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+/* Piano-style for Experience section */
+#experience {
+    background-color: #F8F8F8;
+    padding: 50px;
+}
+
+#experience h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#experience .role {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#experience .duration {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#experience .location {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#experience .technologies {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Piano-style for Hackathons section */
+#hackathons {
+    background-color: #EAEAEA;
+    padding: 50px;
+}
+
+#hackathons h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#hackathons ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#hackathons li {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Piano-style for Languages section */
+#languages {
+    background-color: #F8F8F8;
+    padding: 50px;
+}
+
+#languages h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#languages ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#languages li {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Piano-style for Publications section */
+#publications {
+    background-color: #EAEAEA;
+    padding: 50px;
+}
+
+#publications h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#publications ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#publications li {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Additional styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
     padding: 20px;
-    margin-top: 20px;
-    text-align: center;
 }
 
-footer p {
-    margin: 0;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding: 20px;
-    }
+section {
+    margin-bottom: 60px;
 }
