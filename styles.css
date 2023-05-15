@@ -1,139 +1,83 @@
+/* Global Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+    background-color: #F7F7F7;
     color: #333;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  
-  h1, h2, h3 {
-    color: #333;
-  }
-  
-  .resume-heading {
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .resume-subheading {
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .resume-date {
-    font-style: italic;
-    color: #777;
-  }
-  
-  .resume-content {
-    margin-bottom: 15px;
-  }
-  
-  .resume-skills {
-    margin-bottom: 15px;
-  }
-  
-  .resume-skills h3 {
-    margin-bottom: 5px;
-  }
-  
-  .resume-skills ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  .resume-skills ul li {
-    margin-bottom: 5px;
-  }
-  
-  /* Estilos adicionais para tornar o site mais criativo, bonito, colorido e elegante */
-  
-  body {
-    background-color: #f9f9f9;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    font-size: 28px;
-    color: #333;
+}
+
+h1 {
+    margin-bottom: 10px;
     text-align: center;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.certification {
     margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 22px;
-    color: #333;
-  }
-  
-  .resume-heading {
-    font-size: 24px;
-  }
-  
-  .resume-subheading {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
     font-size: 18px;
-  }
-  
-  .resume-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subtitle {
     font-size: 14px;
-  }
-  
-  .resume-content {
-    border-left: 2px solid #333;
-    padding-left: 10px;
-  }
-  
-  .resume-skills h3 {
-    font-size: 20px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.code {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.verification {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Piano-style specific styles */
+.certification:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.certification::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    border-radius: 5px 0 0 5px;
+}
+
+.certification .title {
+    position: relative;
+    padding-left: 15px;
     color: #333;
-    text-decoration: underline;
-  }
-  
-  .resume-skills ul li {
-    font-size: 16px;
-  }
-  
-  /* Estilos para adicionar cores e efeitos aos elementos */
-  
-  .resume-heading {
-    color: #ff6f61;
-  }
-  
-  .resume-subheading {
-    color: #448aff;
-  }
-  
-  .resume-date {
-    color: #777;
-  }
-  
-  .resume-content {
-    border-left: 2px solid #448aff;
-    padding-left: 10px;
-  }
-  
-  .resume-skills h3 {
-    color: #ff6f61;
-  }
-  
-  .resume-skills ul li {
-    color: #333;
-  }
-  
-  /* Efeitos de hover */
-  
-  .resume-skills ul li:hover {
-    color: #448aff;
-    cursor: pointer;
-  }
-  
-  
+}
+
+.certification .subtitle {
+    color: #999;
+}
+
+.certification .verification {
+    color: #666;
+}
+
+.certification .code {
+    color: #999;
+}
