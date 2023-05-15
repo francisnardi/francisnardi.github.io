@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f1f1f1;
     color: #333;
     line-height: 1.6;
@@ -47,4 +47,93 @@ body {
   .resume-skills ul li {
     margin-bottom: 5px;
   }
+  
+  /* Estilos adicionais para tornar o site mais criativo, bonito, colorido e elegante */
+  
+  body {
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .resume-heading {
+    font-size: 24px;
+  }
+  
+  .resume-subheading {
+    font-size: 18px;
+  }
+  
+  .resume-date {
+    font-size: 14px;
+  }
+  
+  .resume-content {
+    border-left: 2px solid #333;
+    padding-left: 10px;
+  }
+  
+  .resume-skills h3 {
+    font-size: 20px;
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  .resume-skills ul li {
+    font-size: 16px;
+  }
+  
+  /* Estilos para adicionar cores e efeitos aos elementos */
+  
+  .resume-heading {
+    color: #ff6f61;
+  }
+  
+  .resume-subheading {
+    color: #448aff;
+  }
+  
+  .resume-date {
+    color: #777;
+  }
+  
+  .resume-content {
+    border-left: 2px solid #448aff;
+    padding-left: 10px;
+  }
+  
+  .resume-skills h3 {
+    color: #ff6f61;
+  }
+  
+  .resume-skills ul li {
+    color: #333;
+  }
+  
+  /* Efeitos de hover */
+  
+  .resume-skills ul li:hover {
+    color: #448aff;
+    cursor: pointer;
+  }
+  
   
