@@ -1,135 +1,108 @@
+/* styles.css */
+
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
 }
 
 .container {
     max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.text-center {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: indigo;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-/* Header Styles */
-.piano-header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: #6610f2;
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-.piano-header h1 {
-    color: #fff;
+header p {
+    font-size: 18px;
+    margin-bottom: 0;
 }
 
-/* Navigation Styles */
-.navbar {
-    background-color: #6610f2;
+/* Navigation */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
 }
 
-.navbar .navbar-nav .nav-link {
-    color: #fff;
-}
-
-/* Section Styles */
-.piano-section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.piano-section h2 {
-    margin-bottom: 1.5rem;
-}
-
-/* Summary Page Styles */
-.summary-item {
-    margin-bottom: 1.5rem;
-}
-
-/* Education Page Styles */
-.education-item {
-    margin-bottom: 1.5rem;
-}
-
-.education-item .school-name {
-    font-weight: bold;
-}
-
-.education-item .degree {
-    font-style: italic;
-}
-
-.education-item .gpa {
-    color: #6610f2;
-}
-
-/* Experience Page Styles */
-.experience-item {
-    margin-bottom: 1.5rem;
-}
-
-.experience-item .role {
-    font-weight: bold;
-}
-
-.experience-item .date {
-    font-style: italic;
-    color: #6610f2;
-}
-
-/* Hackathons Page Styles */
-.hackathon-item {
-    margin-bottom: 1.5rem;
-}
-
-.hackathon-item .title {
-    font-weight: bold;
-}
-
-.hackathon-item .result {
-    font-style: italic;
-    color: #6610f2;
-}
-
-/* Languages Page Styles */
-.languages-item {
-    margin-bottom: 1.5rem;
-}
-
-.languages-item .language-name {
-    font-weight: bold;
-}
-
-.languages-item .language-level {
-    color: #6610f2;
-}
-
-/* Publications Page Styles */
-.publication-item {
-    margin-bottom: 1.5rem;
-}
-
-.publication-item .title {
-    font-weight: bold;
-}
-
-.publication-item .authors {
-    font-style: italic;
-}
-
-.publication-item .conference {
-    color: #6610f2;
-}
-
-/* Footer Styles */
-.piano-footer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: #6610f2;
-    color: #fff;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main Content */
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
 }
