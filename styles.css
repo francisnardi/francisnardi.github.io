@@ -1,108 +1,91 @@
-/* styles.css */
-
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Reset default browser styles */
+body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    margin-top: 0;
-}
-
-p {
-    margin: 0 0 10px;
-}
-
-ul {
+h6,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
 
-/* Header */
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
 header {
-    background-color: indigo;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 18px;
-    margin-bottom: 0;
-}
-
-/* Navigation */
-nav {
     background-color: #333;
-    color: white;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Main Content */
-main {
-    background-color: white;
+    color: #fff;
     padding: 20px;
 }
 
-main h2 {
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style: none;
+}
+
+main li {
+    margin-bottom: 20px;
+}
+
+main h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-main p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-/* Footer */
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 20px;
+    margin-top: 20px;
     text-align: center;
 }
 
 footer p {
-    margin-bottom: 0;
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
 }
