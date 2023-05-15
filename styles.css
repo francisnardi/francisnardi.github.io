@@ -1,10 +1,10 @@
 body {
-    background-color: #f2f2f2;
+    background-color: #f7f9fc;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #333333;
+    background-color: #303030;
     color: #ffffff;
     padding: 40px;
     text-align: center;
@@ -25,12 +25,14 @@ h2 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #303030;
 }
 
 p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: #444444;
 }
 
 ul.list-group {
@@ -39,16 +41,16 @@ ul.list-group {
 }
 
 ul.list-group-item {
-    background-color: transparent;
+    background-color: #ffffff;
     border: none;
 }
 
 ul.list-group-item a {
-    color: #333333;
+    color: #303030;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 ul.list-group-item a:hover {
-    color: #ff6b6b;
+    color: #6c757d;
 }
