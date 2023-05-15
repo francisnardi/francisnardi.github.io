@@ -82,8 +82,9 @@ ul {
 .languages li {
     margin: 5px;
     padding: 8px 16px;
-    background-color: #dddddd;
-    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 50%;
     font-size: 14px;
     font-weight: bold;
     color: #333333;
