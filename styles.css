@@ -1,102 +1,85 @@
-/* Global Styles */
+/* Piano-style theme */
 body {
+    background-color: #f8f9fa;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
 }
 
-/* Navbar */
-nav {
-    margin-bottom: 20px;
+.section {
+    margin-bottom: 3rem;
 }
 
-.menu {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+.skills-list li {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
     background-color: #333;
-    border-radius: 5px;
-}
-
-.menu li {
-    padding: 10px;
-}
-
-.menu li a {
-    text-decoration: none;
     color: #fff;
+    border-radius: 4px;
 }
 
-.menu li a:hover {
-    color: #ccc;
-}
-
-/* Sections */
-section {
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-section h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 24px;
+.publication-title {
+    font-weight: bold;
     color: #333;
+    margin-bottom: 0.5rem;
 }
 
-section p {
-    line-height: 1.5;
+.publication-authors {
+    font-size: 0.9rem;
+    color: #555;
 }
 
-/* Piano Section Style */
-.piano-section {
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.publication-conference,
+.publication-date {
+    font-size: 0.8rem;
+    color: #888;
 }
 
-.piano-section h2 {
-    color: #333;
-}
+/* Responsive styles */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
 
-/* Bootstrap Overrides */
-.container p {
-    margin-bottom: 10px;
-}
+    h2 {
+        font-size: 1.75rem;
+    }
 
-.container ul {
-    padding-left: 20px;
-}
-
-.container li {
-    margin-bottom: 5px;
-}
-
-.container table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-}
-
-.container th,
-.container td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.container th {
-    background-color: #f2f2f2;
-}
-
-.container img {
-    max-width: 100%;
+    h3 {
+        font-size: 1.25rem;
+    }
 }
