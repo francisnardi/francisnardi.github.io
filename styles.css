@@ -1,85 +1,102 @@
-/* Piano-style theme */
+/* Global Styles */
 body {
-    background-color: #f8f9fa;
     font-family: Arial, sans-serif;
-}
-
-h1,
-h2,
-h3 {
-    font-weight: bold;
-    color: #333;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
+    background-color: #f2f2f2;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 20px;
 }
 
-.section {
-    margin-bottom: 3rem;
+/* Navbar */
+nav {
+    margin-bottom: 20px;
 }
 
-.skills-list li {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
     background-color: #333;
+    border-radius: 5px;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
     color: #fff;
-    border-radius: 4px;
 }
 
-.publication-title {
-    font-weight: bold;
+.menu li a:hover {
+    color: #ccc;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
     color: #333;
-    margin-bottom: 0.5rem;
 }
 
-.publication-authors {
-    font-size: 0.9rem;
-    color: #555;
+section p {
+    line-height: 1.5;
 }
 
-.publication-conference,
-.publication-date {
-    font-size: 0.8rem;
-    color: #888;
+/* Piano Section Style */
+.piano-section {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive styles */
-@media (max-width: 767px) {
-    h1 {
-        font-size: 2rem;
-    }
+.piano-section h2 {
+    color: #333;
+}
 
-    h2 {
-        font-size: 1.75rem;
-    }
+/* Bootstrap Overrides */
+.container p {
+    margin-bottom: 10px;
+}
 
-    h3 {
-        font-size: 1.25rem;
-    }
+.container ul {
+    padding-left: 20px;
+}
+
+.container li {
+    margin-bottom: 5px;
+}
+
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.container th,
+.container td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.container th {
+    background-color: #f2f2f2;
+}
+
+.container img {
+    max-width: 100%;
 }
