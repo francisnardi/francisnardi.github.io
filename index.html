@@ -5,62 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <style>
-        /* Add your CSS styles here */
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Francisco Nardi</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Francisco Nardi</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hackathons.html">Hackathons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="languages.html">Languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="publications.html">Publications</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
-        <section>
+
+    <div class="container">
+        <h1 class="text-center">Resume</h1>
+
+        <div class="summary">
             <h2>Summary</h2>
-            <p>
-                The candidate is an experienced Python Back-end and DevOps Engineer with a background in working on
-                Build & Run projects for Burger King and Popeyes restaurant chains in Brazil. They have also contributed
-                to a Process Automation project at Itau Unibanco as a .NET Back-end and DevOps Engineer. With over two
-                years of experience in each role, the candidate has gained expertise in developing functional
-                specifications, collaborating with teams, performing testing, updating documentation, and providing
-                proactive communication regarding system outages and workarounds.
-            </p>
-            <p>
-                Having completed a Master's degree in Computer Science and currently pursuing a Ph.D. at the University
+            <p>The candidate is an experienced Python Back-end and DevOps Engineer with a background in working on Build
+                & Run projects for Burger King and Popeyes restaurant chains in Brazil. They have also contributed to a
+                Process Automation project at Itau Unibanco as a .NET Back-end and DevOps Engineer. With over two years
+                of experience in each role, the candidate has gained expertise in developing functional specifications,
+                collaborating with teams, performing testing, updating documentation, and providing proactive
+                communication regarding system outages and workarounds.</p>
+            <p>Having completed a Master's degree in Computer Science and currently pursuing a Ph.D. at the University
                 of Campinas, the candidate brings a strong academic background to their professional experience. Their
                 research focuses on Health Data Science, specifically Computerized Adaptive Testing for Clinical Case
                 Resolution, utilizing R, Python, Docker, Flask, JavaScript, and MySQL. Alongside their academic
                 pursuits, they have actively participated in hackathons, both as a developer and pitch presenter, and
-                have been recognized as a winner in several prestigious competitions.
-            </p>
-            <p>
-                During their exchange program at the University of Missouri in the United States, the candidate delved
+                have been recognized as a winner in several prestigious competitions.</p>
+            <p>During their exchange program at the University of Missouri in the United States, the candidate delved
                 into Machine Learning, Web Development, Compilers, and Economics. Additionally, they gained valuable
                 industry experience as a Web Developer Intern at Pfizer, working with JavaScript, Python, JQuery, CSS,
-                and HTML.
-            </p>
-            <p>
-                The candidate possesses strong communication skills in English, both written and verbal, enabling
-                effective collaboration with remote customers and team members. They thrive in an Agile project
+                and HTML.</p>
+            <p>The candidate possesses strong communication skills in English, both written and verbal
+                , enabling effective collaboration with remote customers and team members. They thrive in an Agile
+                project
                 environment and demonstrate analytical and problem-solving abilities. With their high energy,
-                motivation, and tech-savviness, the candidate exhibits a passion for innovation and is committed to
-                delivering continuous improvement.
-            </p>
-        </section>
-        <section>
-            <h2>Navigation</h2>
-            <ul>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="hackathons.html">Hackathons</a></li>
-                <li><a href="languages.html">Languages</a></li>
-                <li><a href="publications.html">Publications</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+                motivation,
+                and tech-savviness, the candidate exhibits a passion for innovation and is committed to delivering
+                continuous
+                improvement.</p>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2023 Francisco Nardi. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
