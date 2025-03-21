@@ -1,22 +1,21 @@
-// assets/js/main.js
 document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.getElementById('themeToggle');
+  const themeToggle = document.getElementById('themeToggle');
   const body = document.body;
 
-  // Verifica a preferência salva ou o sistema
-  if (localStorage.getItem('theme') === 'dark' || 
-      (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    body.classList.add('dark-theme');
+  // Verifica se o modo escuro está salvo no localStorage
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
   }
 
-  // Evento de clique no botão
-  if (toggleButton) {
-    toggleButton.addEventListener('click', () => {
-      body.classList.toggle('dark-theme');
-      const isDark = body.classList.contains('dark-theme');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  } else {
-    console.error('Toggle button not found!');
-  }
+  // Adiciona o evento de clique ao botão
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    // Salva a preferência no localStorage
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
 });
