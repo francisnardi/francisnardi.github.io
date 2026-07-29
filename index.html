@@ -1,527 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Francisco Jose Nardi Filho - Senior Full Stack Engineer & Technical Leader</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts: Lato -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <!-- Custom Styles -->
-  <style>
-    body {
-      background: linear-gradient(135deg, #121212, #1f1f1f);
-      font-family: 'Lato', sans-serif;
-      color: #d3d3d3;
-      line-height: 1.6;
-    }
-    .navbar {
-      background: rgba(31, 42, 68, 0.95);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    }
-    .navbar-brand, .nav-link {
-      color: #ffffff !important;
-      font-weight: 700;
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-    .nav-link:hover {
-      color: #e63946 !important;
-      transform: scale(1.05);
-    }
-    h1.display-4 {
-      color: #e63946;
-      font-weight: 900;
-      letter-spacing: 0.5px;
-      animation: fadeIn 1.5s ease;
-    }
-    .subtitle-text {
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 1.35rem;
-      margin-bottom: 20px;
-    }
-    h2 {
-      color: #ffffff;
-      font-weight: 700;
-      position: relative;
-      margin-bottom: 30px;
-    }
-    h2::after {
-      content: '';
-      width: 60px;
-      height: 3px;
-      background: #e63946;
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      border-radius: 2px;
-    }
-    .card {
-      background: #282828;
-      border: 1px solid #3a3a3a;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      color: #d3d3d3;
-      height: 100%;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(230, 57, 70, 0.15);
-      border-color: #e63946;
-    }
-    .card-title {
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 1.25rem;
-    }
-    .card-subtitle {
-      color: #e63946;
-      font-weight: 600;
-      font-size: 0.95rem;
-      margin-bottom: 12px;
-    }
-    .card-body p, .card-body ul li {
-      color: #d3d3d3;
-    }
-    .badge-custom {
-      background: linear-gradient(90deg, #3b4a6b, #1f2a44);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 6px 12px;
-      font-size: 0.85rem;
-      border-radius: 20px;
-      color: #ffffff;
-      margin: 3px;
-      display: inline-block;
-      transition: transform 0.2s ease, background 0.3s ease;
-    }
-    .badge-custom:hover {
-      transform: scale(1.08);
-      background: #e63946;
-      color: #fff;
-    }
-    .list-group-item {
-      background: #282828;
-      border: 1px solid #3a3a3a;
-      border-radius: 8px !important;
-      margin-bottom: 10px;
-      padding: 14px;
-      color: #d3d3d3;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    }
-    .lead {
-      color: #b0b0b0;
-      font-size: 1.15rem;
-    }
-    ul.styled-list {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    ul.styled-list li {
-      position: relative;
-      padding-left: 20px;
-      margin-bottom: 8px;
-    }
-    ul.styled-list li::before {
-      content: '\2022';
-      color: #e63946;
-      font-weight: bold;
-      font-size: 1.2rem;
-      position: absolute;
-      left: 0;
-      top: -2px;
-    }
-    .project-subheading {
-      color: #f1faee;
-      font-weight: 700;
-      font-size: 1rem;
-      margin-top: 10px;
-      margin-bottom: 4px;
-    }
-    section {
-      padding: 45px 0;
-      animation: slideUp 0.8s ease;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    .container {
-      max-width: 1200px;
-    }
-    a {
-      color: #e63946;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-    a:hover {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-    .contact-list li {
-      margin-bottom: 8px;
-    }
-    .contact-list i {
-      width: 25px;
-      color: #e63946;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Jose Nardi Filho | Senior Full Stack Engineer & Technical Leader</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2b2b2b;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }
+        .header-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #ffffff;
+            padding: 3rem 0;
+            border-bottom: 4px solid #3b82f6;
+        }
+        .header-title {
+            font-weight: 700;
+            font-size: 2.5rem;
+            letter-spacing: -0.5px;
+        }
+        .header-subtitle {
+            color: #94a3b8;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        .contact-badge {
+            background: rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
+            text-decoration: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            display: inline-block;
+            margin-right: 0.4rem;
+            margin-bottom: 0.5rem;
+        }
+        .contact-badge:hover {
+            background: #3b82f6;
+            color: #ffffff;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            margin-bottom: 1.5rem;
+        }
+        .section-title {
+            font-weight: 700;
+            color: #0f172a;
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: #3b82f6;
+        }
+        .tech-tag {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-right: 0.3rem;
+            margin-bottom: 0.4rem;
+            border: 1px solid #bfdbfe;
+        }
+        .timeline-title {
+            font-weight: 700;
+            color: #1e293b;
+        }
+        .timeline-company {
+            color: #2563eb;
+            font-weight: 600;
+        }
+        .timeline-date {
+            color: #64748b;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .sub-project {
+            border-left: 3px solid #cbd5e1;
+            padding-left: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #0f172a;
+            color: #64748b;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top mb-4">
-    <div class="container">
-      <a class="navbar-brand" href="#">Francisco Jose Nardi Filho</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#objective">Objective</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Hackathons</a></li>
-          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
-          <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Main Content -->
-  <div class="container">
-    <!-- About Section -->
-    <section id="about" class="my-3">
-      <h1 class="display-4">Francisco Jose Nardi Filho, Ph.D.</h1>
-      <p class="subtitle-text">Senior Full Stack Engineer | Technical Leader | Cloud & FinTech Specialist</p>
-      <div class="row">
-        <div class="col-md-6">
-          <ul class="list-unstyled contact-list">
-            <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/francisnardi" target="_blank">linkedin.com/in/francisnardi</a></li>
-            <li><i class="fab fa-github"></i> <a href="https://github.com/francisnardi" target="_blank">github.com/francisnardi</a></li>
-            <li><i class="fas fa-globe"></i> <a href="https://sites.google.com/view/fnardif" target="_blank">sites.google.com/view/fnardif</a></li>
-            <li><i class="fas fa-envelope"></i> francisnardi@gmail.com</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <ul class="list-unstyled contact-list">
-            <li><i class="fas fa-phone"></i> +55 (11) 98362-8217</li>
-            <li><i class="fas fa-map-marker-alt"></i> Guaranesia, MG / São Paulo, SP, Brazil</li>
-            <li><i class="fas fa-passport"></i> European (Italian) & Brazilian Citizenship</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Professional Objective -->
-    <section id="objective" class="my-4">
-      <h2>Professional Objective</h2>
-      <p class="lead">Senior Full Stack Engineer with over 11 years of experience engineering, scaling, and deploying high-performance software solutions for global players across Financial Systems (FinTech, Trading Desks, Wholesale Banking), Logistics, and Corporate Automation domains. Holding an M.Sc. and Ph.D. background from UNICAMP, I excel in back-end microservices, modern front-end frameworks, cloud-native architectures, and technical leadership.</p>
-    </section>
-
-    <!-- Profile Summary & Skills -->
-    <section id="skills" class="my-4">
-      <h2>Profile Summary & Key Stack</h2>
-      <ul class="styled-list">
-        <li><strong>Over 11 years of software engineering experience</strong> delivering production-grade, low-latency, and highly scalable solutions.</li>
-        <li><strong>Back-End Mastery:</strong> Expert in Python (FastAPI/Flask), .NET Core (C#), and Go (Golang) for high-throughput microservices.</li>
-        <li><strong>Front-End Engineering:</strong> Designing reactive, user-centric dashboards and web applications using React and Angular with TypeScript.</li>
-        <li><strong>Cloud & DevOps:</strong> Designing cloud-native solutions on AWS and Azure, managing Docker containerization, and configuring automated CI/CD pipelines (Jenkins, GitLab CI/CD, Azure DevOps, Bitbucket).</li>
-        <li><strong>Financial & Domain Expertise:</strong> Specialized in Derivatives, FX (Foreign Exchange), Fixed Income asset processing, supply chain logistics, and GenAI Agents integration.</li>
-        <li><strong>Academic Rigor:</strong> M.Sc. and Ph.D. research background from UNICAMP in Adaptive Systems, Machine Learning, and Data Science.</li>
-      </ul>
-      <div class="mt-4">
-        <span class="badge-custom">Python (FastAPI/Flask)</span>
-        <span class="badge-custom">.NET Core (C#)</span>
-        <span class="badge-custom">Go (Golang)</span>
-        <span class="badge-custom">React</span>
-        <span class="badge-custom">Angular</span>
-        <span class="badge-custom">TypeScript</span>
-        <span class="badge-custom">PostgreSQL</span>
-        <span class="badge-custom">SQL Server</span>
-        <span class="badge-custom">AWS</span>
-        <span class="badge-custom">Azure</span>
-        <span class="badge-custom">Docker</span>
-        <span class="badge-custom">CI/CD Pipelines</span>
-        <span class="badge-custom">GenAI Agents</span>
-        <span class="badge-custom">FinTech & Trading Desks</span>
-        <span class="badge-custom">pytest & xUnit</span>
-        <span class="badge-custom">Agile Technical Leadership</span>
-      </div>
-    </section>
-
-    <!-- Professional Experience -->
-    <section id="experience" class="my-4">
-      <h2>Professional Experience</h2>
-      <div class="row g-4">
-        
-        <!-- Nardi Tech -->
-        <div class="col-12">
-          <div class="card">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-start flex-wrap">
-                <div>
-                  <h3 class="card-title">Managing Partner & Senior Full Stack Engineer</h3>
-                  <p class="card-subtitle"><i class="fas fa-building"></i> Nardi Tech (Consultancy Partnership) | Nov 2022 - Present | Remote</p>
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="header-title">Francisco Jose Nardi Filho</h1>
+                    <p class="header-subtitle mb-3">Senior Full Stack Engineer | Technical Leader | Cloud & FinTech Specialist</p>
+                    <div class="d-flex flex-wrap align-items-center">
+                        <span class="text-light me-3 mb-2"><i class="fa-solid fa-location-dot me-1"></i> São Paulo, SP / Guaranesia, MG, Brazil</span>
+                        <span class="text-light mb-2"><i class="fa-solid fa-passport me-1"></i> European (Italian) & Brazilian Citizenship</span>
+                    </div>
                 </div>
-                <span class="badge bg-danger">Current</span>
-              </div>
-              <p>As Managing Partner of Nardi Tech, I co-lead high-impact software engineering delivery, acting as a senior technical consultant in mission-critical corporate systems for international clients in financial, logistics, and automation sectors:</p>
-              
-              <div class="ms-3">
-                <div class="project-subheading"><i class="fas fa-chevron-right text-danger"></i> Consulting: EY (Ernst & Young) | Client: Broadridge (Jun 2026 - Present)</div>
-                <ul class="styled-list mb-2">
-                  <li>Engineering the core "Custom Policy Engine" — the proxy voting policy engine for New York Stock Exchange (NYSE) shareholders.</li>
-                  <li>Optimizing low-latency high-throughput algorithms, authoring REST APIs, and integrating GenAI agents for test automation and code generation.</li>
-                  <li><em>Tech Stack:</em> Python, PostgreSQL, AWS, Jenkins, SonarQube, GitLab CI/CD, GenAI Agents.</li>
-                </ul>
-
-                <div class="project-subheading"><i class="fas fa-chevron-right text-danger"></i> Consulting: BrickAbode | Client: Yubico (Feb 2024 - Sep 2024)</div>
-                <ul class="styled-list mb-2">
-                  <li>Engineered high-reliability back-end microservices and designed internal management dashboards using React + TypeScript for global hardware security key supply chain logistics.</li>
-                  <li><em>Tech Stack:</em> Go (Golang), Python, PostgreSQL, Azure Service Bus, React, TypeScript, Azure DevOps.</li>
-                </ul>
-
-                <div class="project-subheading"><i class="fas fa-chevron-right text-danger"></i> Consulting: e-Deploy | Client: Burger King & Popeyes (Nov 2022 - May 2023)</div>
-                <ul class="styled-list">
-                  <li>Architected microservices and database schemas for self-service digital kiosk platforms across major QSR chains.</li>
-                  <li><em>Tech Stack:</em> Python, FastAPI, Docker, Azure, PostgreSQL, SQLite, Bitbucket Pipelines.</li>
-                </ul>
-              </div>
-              <div class="mt-3">
-                <span class="badge-custom">Python</span> <span class="badge-custom">Go</span> <span class="badge-custom">React</span> <span class="badge-custom">PostgreSQL</span> <span class="badge-custom">AWS</span> <span class="badge-custom">Azure</span> <span class="badge-custom">GenAI</span>
-              </div>
+                <div class="col-lg-4 mt-3 mt-lg-0 text-lg-end">
+                    <a href="https://linkedin.com/in/francisnardi" target="_blank" class="contact-badge"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</a>
+                    <a href="https://github.com/francisnardi" target="_blank" class="contact-badge"><i class="fa-brands fa-github me-1"></i> GitHub</a>
+                    <a href="https://sites.google.com/view/fnardif" target="_blank" class="contact-badge"><i class="fa-solid fa-globe me-1"></i> Academic Site</a>
+                    <a href="mailto:francisnardi@gmail.com" class="contact-badge"><i class="fa-solid fa-envelope me-1"></i> Email</a>
+                    <a href="tel:+5511983628217" class="contact-badge"><i class="fa-solid fa-phone me-1"></i> +55 (11) 98362-8217</a>
+                </div>
             </div>
-          </div>
         </div>
+    </header>
 
-        <!-- Evertec -->
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Senior Software Engineer | Technical Leader</h3>
-              <p class="card-subtitle">Evertec | allocated at Tier-1 U.S. Investment Bank (GMOT) | Sep 2024 - Jun 2026 | São Paulo, Brazil</p>
-              <ul class="styled-list">
-                <li>Led technical delivery and engineered high-throughput backend APIs for Global Markets trading desks (Derivatives, FX, Fixed Income).</li>
-                <li>Designed and maintained reactive React + TypeScript client dashboards used by core trading teams.</li>
-                <li>Achieved 90%+ test coverage with pytest and xUnit on critical financial calculation engines.</li>
-                <li>Coordinated global cross-functional Agile squads across LATAM, US, and India.</li>
-              </ul>
-              <div class="mt-2">
-                <span class="badge-custom">Python</span> <span class="badge-custom">.NET Core</span> <span class="badge-custom">React</span> <span class="badge-custom">TypeScript</span> <span class="badge-custom">PostgreSQL</span> <span class="badge-custom">EMIS</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            
+            <!-- Left Column: Summary, Experience -->
+            <div class="col-lg-8">
+                
+                <!-- About / Summary -->
+                <div class="card p-4">
+                    <h3 class="section-title"><i class="fa-solid fa-user me-2"></i>Professional Objective & Summary</h3>
+                    <p class="text-secondary">
+                        Senior Full Stack Engineer with over 11 years of experience engineering, scaling, and deploying high-performance software solutions for global players across <strong>Financial Systems</strong> (FinTech, Trading Desks, Wholesale Banking), <strong>Logistics</strong>, and <strong>Corporate Automation</strong> domains. Holding an M.Sc. and Ph.D. Candidate background from UNICAMP, I excel in back-end microservices, modern front-end frameworks, cloud-native architectures, and technical leadership.
+                    </p>
+                    <div class="mt-2">
+                        <span class="tech-tag">Python (FastAPI/Flask)</span>
+                        <span class="tech-tag">.NET Core (C#)</span>
+                        <span class="tech-tag">Go (Golang)</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">CI/CD Pipelines</span>
+                        <span class="tech-tag">GenAI Agents</span>
+                        <span class="tech-tag">FinTech & Trading Desks</span>
+                        <span class="tech-tag">pytest & xUnit</span>
+                        <span class="tech-tag">Agile Leadership</span>
+                    </div>
+                </div>
 
-        <!-- BRQ -->
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Senior Back-End Developer</h3>
-              <p class="card-subtitle">BRQ Digital Solutions | allocated at Tier-1 U.S. Investment Bank (GMOT) | Jun 2023 - Fev 2024 | São Paulo, Brazil</p>
-              <ul class="styled-list">
-                <li>Developed scalable APIs mapping fixed-income asset workflows and derivative contract processing.</li>
-                <li>Implemented comprehensive automated test suites (pytest, xUnit) ensuring strict data integrity.</li>
-                <li>Collaborated in fast-paced Agile sprint cycles with international engineering teams.</li>
-              </ul>
-              <div class="mt-2">
-                <span class="badge-custom">Python</span> <span class="badge-custom">.NET Core</span> <span class="badge-custom">PostgreSQL</span> <span class="badge-custom">Agile</span> <span class="badge-custom">pytest</span>
-              </div>
-            </div>
-          </div>
-        </div>
+                <!-- Professional Experience -->
+                <div class="card p-4">
+                    <h3 class="section-title"><i class="fa-solid fa-briefcase me-2"></i>Professional Experience</h3>
+                    
+                    <!-- Nardi Tech -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap">
+                            <div>
+                                <h5 class="timeline-title mb-0">Managing Partner & Senior Full Stack Engineer</h5>
+                                <span class="timeline-company">Nardi Tech (Consultancy Partnership)</span>
+                            </div>
+                            <span class="timeline-date">Nov 2022 - Present | Remote</span>
+                        </div>
+                        <p class="text-secondary mt-2 mb-2">
+                            Co-leading high-impact software engineering delivery as a senior technical consultant in mission-critical corporate systems for international clients:
+                        </p>
+                        
+                        <div class="sub-project">
+                            <h6 class="fw-bold mb-1">Consulting: EY (Ernst & Young) | Client: Broadridge <span class="text-muted fw-normal">(Jun 2026 - Present)</span></h6>
+                            <ul class="text-secondary small ps-3 mb-2">
+                                <li>Engineering the core "Custom Policy Engine" — the proxy voting policy engine for New York Stock Exchange (NYSE) shareholders.</li>
+                                <li>Optimizing low-latency high-throughput algorithms, authoring REST APIs, and integrating GenAI agents for test automation and code generation.</li>
+                            </ul>
+                            <div>
+                                <span class="tech-tag">Python</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">AWS</span><span class="tech-tag">Jenkins</span><span class="tech-tag">SonarQube</span><span class="tech-tag">GitLab CI/CD</span><span class="tech-tag">GenAI Agents</span>
+                            </div>
+                        </div>
 
-        <!-- Itaú Unibanco -->
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Senior .NET & DevOps Engineer</h3>
-              <p class="card-subtitle">Itaú Unibanco | Jan 2020 - Jul 2022 | São Paulo, Brazil</p>
-              <ul class="styled-list">
-                <li>Built secure, high-availability digital-signature web APIs in .NET Core backed by SQL Server and AWS cloud infrastructure.</li>
-                <li>Automated CI/CD deployment pipelines on Linux architectures, drastically increasing release efficiency.</li>
-                <li>Mentored junior engineers and aligned deliverables with Clean Architecture and TDD principles.</li>
-              </ul>
-              <div class="mt-2">
-                <span class="badge-custom">C# (.NET Core)</span> <span class="badge-custom">SQL Server</span> <span class="badge-custom">AWS</span> <span class="badge-custom">CI/CD</span> <span class="badge-custom">Clean Architecture</span>
-              </div>
-            </div>
-          </div>
-        </div>
+                        <div class="sub-project">
+                            <h6 class="fw-bold mb-1">Consulting: BrickAbode | Client: Yubico <span class="text-muted fw-normal">(Feb 2024 - Sep 2024)</span></h6>
+                            <ul class="text-secondary small ps-3 mb-2">
+                                <li>Engineered high-reliability back-end microservices and designed internal management dashboards using React + TypeScript for global hardware security key supply chain logistics.</li>
+                            </ul>
+                            <div>
+                                <span class="tech-tag">Go (Golang)</span><span class="tech-tag">Python</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Azure Service Bus</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Azure DevOps</span>
+                            </div>
+                        </div>
 
-        <!-- UNICAMP -->
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Scientific Researcher & Software Engineer</h3>
-              <p class="card-subtitle">University of Campinas (UNICAMP) | Jan 2015 - Dec 2019 | Campinas, SP, Brazil</p>
-              <ul class="styled-list">
-                <li>Developed Computerized Adaptive Testing engines and clinical recommendation microservices using Python/Flask and Docker.</li>
-                <li>Lectured on software programming, algorithms, and database management (SQL/NoSQL) to undergraduate computer science students.</li>
-              </ul>
-              <div class="mt-2">
-                <span class="badge-custom">Python</span> <span class="badge-custom">Flask</span> <span class="badge-custom">Docker</span> <span class="badge-custom">MySQL</span> <span class="badge-custom">Adaptive Systems</span>
-              </div>
-            </div>
-          </div>
-        </div>
+                        <div class="sub-project">
+                            <h6 class="fw-bold mb-1">Consulting: e-Deploy | Client: Burger King & Popeyes <span class="text-muted fw-normal">(Nov 2022 - May 2023)</span></h6>
+                            <ul class="text-secondary small ps-3 mb-2">
+                                <li>Architected microservices and database schemas for self-service digital kiosk platforms across major QSR chains.</li>
+                            </ul>
+                            <div>
+                                <span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Docker</span><span class="tech-tag">Azure</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">SQLite</span><span class="tech-tag">Bitbucket Pipelines</span>
+                            </div>
+                        </div>
+                    </div>
 
-      </div>
-    </section>
+                    <hr class="my-4">
 
-    <!-- Education Section -->
-    <section id="education" class="my-4">
-      <h2>Education</h2>
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Ph.D. in Computer Science</h3>
-              <p class="card-subtitle">University of Campinas (UNICAMP) | 2017 - 2020</p>
-              <p class="mb-0"><strong>Focus:</strong> Adaptive Systems, Data Science & Machine Learning</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">M.Sc. in Computer Science</h3>
-              <p class="card-subtitle">University of Campinas (UNICAMP) | 2015 - 2017</p>
-              <p class="mb-0"><strong>Focus:</strong> Data Systems, Data Mining & Machine Learning</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">B.Sc. in Computer Science</h3>
-              <p class="card-subtitle">IFSULDEMINAS & UMKC (USA) | 2010 - 2014</p>
-              <p class="mb-0"><strong>Focus:</strong> Software Engineering & Data Systems (Exchange Program at UMKC)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <!-- Evertec -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap">
+                            <div>
+                                <h5 class="timeline-title mb-0">Senior Software Engineer | Technical Leader</h5>
+                                <span class="timeline-company">Evertec <span class="text-muted fw-normal">(Allocated at Tier-1 U.S. Investment Bank - GMOT)</span></span>
+                            </div>
+                            <span class="timeline-date">Sep 2024 - Jun 2026 | São Paulo, Brazil</span>
+                        </div>
+                        <ul class="text-secondary mt-2 ps-3">
+                            <li>Led technical delivery and engineered high-throughput backend APIs for Global Markets trading desks (Derivatives, FX, Fixed Income).</li>
+                            <li>Designed and maintained reactive React + TypeScript client dashboards used by core trading teams.</li>
+                            <li>Achieved 90%+ test coverage with pytest and xUnit on critical financial calculation engines.</li>
+                            <li>Coordinated global cross-functional Agile squads across LATAM, US, and India.</li>
+                        </ul>
+                        <div class="mt-2">
+                            <span class="tech-tag">Python</span><span class="tech-tag">.NET Core</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">EMIS</span>
+                        </div>
+                    </div>
 
-    <!-- Hackathons & Awards -->
-    <section id="projects" class="my-4">
-      <h2>Hackathons & Awards</h2>
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title"><i class="fas fa-trophy text-warning"></i> ANBIMA Hackathon (2019)</h3>
-              <p><strong>1st Place:</strong> Developed a subscription-based investment platform for financial products.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title"><i class="fas fa-trophy text-warning"></i> QuintoAndar Hackathon (2018)</h3>
-              <p><strong>1st Place:</strong> Created a post-move rental service platform offering essential utilities.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title"><i class="fas fa-trophy text-warning"></i> Algar Telecom Hackathon (2018)</h3>
-              <p><strong>1st Place:</strong> Built an analytical platform to reduce customer churn in telecom.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Open Finance Hackathon - BTG (2022)</h3>
-              <p>Open Finance analytics app for personalized client investment recommendations.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Data Battle - Itaú Unibanco (2020)</h3>
-              <p>Land purchase recommendation system for agricultural expansion based on financial capacity.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Create Challenge Switzerland (2020)</h3>
-              <p>AI tools for patient screening and prognosis optimization based on electronic health records.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <hr class="my-4">
 
-    <!-- Publications Section -->
-    <section id="publications" class="my-4">
-      <h2>Publications & Research</h2>
-      <ul class="list-group">
-        <li class="list-group-item"><i class="fas fa-book text-danger me-2"></i> <strong>NARDI FILHO, F.J.</strong> "Computerized Adaptive Testing Applied to Clinical Case Resolution", PhD Thesis, UNICAMP, 2020.</li>
-        <li class="list-group-item"><i class="fas fa-book text-danger me-2"></i> <strong>NARDI FILHO, F.J.</strong> "Hybrid Narrative and Clinical Knowledge Base for Emergency Medicine", Master Thesis, UNICAMP, 2017.</li>
-        <li class="list-group-item"><i class="fas fa-file-alt text-danger me-2"></i> VILHENA, P.; NARDI FILHO, F.J.; SILVA, R.G.T.M. "Analysis of the Socioeconomic and Cultural Questionnaire of the IFSULDEMINAS Entrance Exam", 2018.</li>
-        <li class="list-group-item"><i class="fas fa-file-alt text-danger me-2"></i> <strong>NARDI FILHO, F.J.</strong>; FASSBINDER, A.G.O.; SILVA, R.G.T.M. "Towards the Identification of Data Mining Techniques in the Brazilian Governmental Context", Brazilian Technology Symposium (UNICAMP), 2016.</li>
-      </ul>
-    </section>
+                    <!-- BRQ -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap">
+                            <div>
+                                <h5 class="timeline-title mb-0">Senior Back-End Developer</h5>
+                                <span class="timeline-company">BRQ Digital Solutions <span class="text-muted fw-normal">(Allocated at Tier-1 U.S. Investment Bank - GMOT)</span></span>
+                            </div>
+                            <span class="timeline-date">Jun 2023 - Feb 2024 | São Paulo, Brazil</span>
+                        </div>
+                        <ul class="text-secondary mt-2 ps-3">
+                            <li>Developed scalable APIs mapping fixed-income asset workflows and derivative contract processing.</li>
+                            <li>Implemented comprehensive automated test suites (pytest, xUnit) ensuring strict data integrity.</li>
+                        </ul>
+                        <div class="mt-2">
+                            <span class="tech-tag">Python</span><span class="tech-tag">.NET Core</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Agile</span><span class="tech-tag">pytest</span>
+                        </div>
+                    </div>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="my-4">
-      <h2>Certificates & Credentials</h2>
-      <div class="row g-3">
-        <div class="col-md-6">
-          <ul class="list-group">
-            <li class="list-group-item"><i class="fas fa-certificate text-warning me-2"></i> <strong>Professional Scrum Product Owner I</strong> - Scrum.org</li>
-            <li class="list-group-item"><i class="fas fa-certificate text-warning me-2"></i> <strong>DevOps Essentials Professional</strong> - CertiProf LLC</li>
-            <li class="list-group-item"><i class="fas fa-certificate text-warning me-2"></i> <strong>Digital Product Management</strong> - University of Virginia</li>
-          </ul>
+                    <hr class="my-4">
+
+                    <!-- Itaú -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap">
+                            <div>
+                                <h5 class="timeline-title mb-0">Senior .NET & DevOps Engineer</h5>
+                                <span class="timeline-company">Itaú Unibanco</span>
+                            </div>
+                            <span class="timeline-date">Jan 2020 - Jul 2022 | São Paulo, Brazil</span>
+                        </div>
+                        <ul class="text-secondary mt-2 ps-3">
+                            <li>Built secure, high-availability digital-signature web APIs in .NET Core backed by SQL Server and AWS cloud infrastructure.</li>
+                            <li>Automated CI/CD deployment pipelines on Linux architectures, drastically increasing release efficiency.</li>
+                            <li>Mentored junior engineers and aligned deliverables with Clean Architecture and TDD principles.</li>
+                        </ul>
+                        <div class="mt-2">
+                            <span class="tech-tag">C# (.NET Core)</span><span class="tech-tag">SQL Server</span><span class="tech-tag">AWS</span><span class="tech-tag">CI/CD</span><span class="tech-tag">Clean Architecture</span>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!-- UNICAMP -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-start flex-wrap">
+                            <div>
+                                <h5 class="timeline-title mb-0">Scientific Researcher & Software Engineer</h5>
+                                <span class="timeline-company">University of Campinas (UNICAMP)</span>
+                            </div>
+                            <span class="timeline-date">Jan 2015 - Dec 2019 | Campinas, SP, Brazil</span>
+                        </div>
+                        <ul class="text-secondary mt-2 ps-3">
+                            <li>Developed Computerized Adaptive Testing engines and clinical recommendation microservices using Python/Flask and Docker.</li>
+                            <li>Lectured on software programming, algorithms, and database management (SQL/NoSQL) to undergraduate computer science students.</li>
+                        </ul>
+                        <div class="mt-2">
+                            <span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">Docker</span><span class="tech-tag">MySQL</span><span class="tech-tag">Adaptive Systems</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Column: Education, Awards, Certificates, Languages -->
+            <div class="col-lg-4">
+                
+                <!-- Education -->
+                <div class="card p-4">
+                    <h4 class="section-title"><i class="fa-solid fa-graduation-cap me-2"></i>Education</h4>
+                    
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-0">Ph.D. Candidate in Computer Science</h6>
+                        <span class="text-primary small fw-semibold">UNICAMP</span> <span class="text-muted small">| 2017 - Present</span>
+                        <p class="text-muted small mb-0">Focus: Adaptive Systems, Data Science & Machine Learning</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-0">M.Sc. in Computer Science</h6>
+                        <span class="text-primary small fw-semibold">UNICAMP</span> <span class="text-muted small">| 2015 - 2017</span>
+                        <p class="text-muted small mb-0">Focus: Data Systems, Data Mining & Machine Learning</p>
+                    </div>
+
+                    <div>
+                        <h6 class="fw-bold mb-0">B.Sc. in Computer Science</h6>
+                        <span class="text-primary small fw-semibold">IFSULDEMINAS & UMKC (USA)</span> <span class="text-muted small">| 2010 - 2014</span>
+                        <p class="text-muted small mb-0">Focus: Software Engineering & Data Systems (Academic Exchange at UMKC)</p>
+                    </div>
+                </div>
+
+                <!-- Hackathons & Awards -->
+                <div class="card p-4">
+                    <h4 class="section-title"><i class="fa-solid fa-trophy me-2"></i>Hackathons & Awards</h4>
+                    <ul class="list-unstyled text-secondary small mb-0">
+                        <li class="mb-2"><strong>🥇 ANBIMA Hackathon (2019):</strong> 1st Place — Subscription investment platform for financial products.</li>
+                        <li class="mb-2"><strong>🥇 QuintoAndar Hackathon (2018):</strong> 1st Place — Post-move rental service platform for essential utilities.</li>
+                        <li class="mb-2"><strong>🥇 Algar Telecom Hackathon (2018):</strong> 1st Place — Analytical platform for telecom churn reduction.</li>
+                        <li class="mb-2"><strong>BTG Open Finance (2022):</strong> Open Finance analytics app for personalized investments.</li>
+                        <li class="mb-2"><strong>Itaú Data Battle (2020):</strong> Land purchase recommendation system for agricultural expansion.</li>
+                        <li><strong>Create Challenge Switzerland (2020):</strong> AI tools for patient screening and prognosis optimization.</li>
+                    </ul>
+                </div>
+
+                <!-- Publications -->
+                <div class="card p-4">
+                    <h4 class="section-title"><i class="fa-solid fa-book-open me-2"></i>Publications</h4>
+                    <ul class="list-unstyled text-secondary small mb-0">
+                        <li class="mb-2">📜 <strong>NARDI FILHO, F.J.</strong> "Computerized Adaptive Testing Applied to Clinical Case Resolution", Doctoral Research, UNICAMP.</li>
+                        <li class="mb-2">📜 <strong>NARDI FILHO, F.J.</strong> "Hybrid Narrative and Clinical Knowledge Base for Emergency Medicine", Master Thesis, UNICAMP, 2017.</li>
+                        <li class="mb-2">📜 VILHENA, P.; <strong>NARDI FILHO, F.J.</strong>; SILVA, R.G.T.M. "Analysis of the Socioeconomic and Cultural Questionnaire of the IFSULDEMINAS Entrance Exam", 2018.</li>
+                        <li>📜 <strong>NARDI FILHO, F.J.</strong>; FASSBINDER, A.G.O.; SILVA, R.G.T.M. "Towards the Identification of Data Mining Techniques in the Brazilian Governmental Context", BTS (UNICAMP), 2016.</li>
+                    </ul>
+                </div>
+
+                <!-- Certificates -->
+                <div class="card p-4">
+                    <h4 class="section-title"><i class="fa-solid fa-certificate me-2"></i>Certificates</h4>
+                    <ul class="list-unstyled text-secondary small mb-0">
+                        <li class="mb-1"><i class="fa-solid fa-check text-primary me-2"></i>Professional Scrum Product Owner I (PSPO I) — Scrum.org</li>
+                        <li class="mb-1"><i class="fa-solid fa-check text-primary me-2"></i>DevOps Essentials Professional — CertiProf LLC</li>
+                        <li class="mb-1"><i class="fa-solid fa-check text-primary me-2"></i>Digital Product Management — Univ. of Virginia</li>
+                        <li class="mb-1"><i class="fa-solid fa-check text-primary me-2"></i>ANBIMA CPA-20 — ANBIMA</li>
+                        <li class="mb-1"><i class="fa-solid fa-check text-primary me-2"></i>ASP.NET 6 Fundamentals — Balta.io</li>
+                        <li><i class="fa-solid fa-check text-primary me-2"></i>Entity Framework Fundamentals — Balta.io</li>
+                    </ul>
+                </div>
+
+                <!-- Languages -->
+                <div class="card p-4">
+                    <h4 class="section-title"><i class="fa-solid fa-language me-2"></i>Languages</h4>
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold small">English</span>
+                        <span class="text-muted small">Fluent / Professional</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold small">Portuguese</span>
+                        <span class="text-muted small">Native</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-semibold small">Spanish</span>
+                        <span class="text-muted small">Intermediate</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="fw-semibold small">French</span>
+                        <span class="text-muted small">Intermediate</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="col-md-6">
-          <ul class="list-group">
-            <li class="list-group-item"><i class="fas fa-certificate text-warning me-2"></i> <strong>ANBIMA CPA-20</strong> - Brazilian Financial & Capital Markets Association</li>
-            <li class="list-group-item"><i class="fas fa-certificate text-warning me-2"></i> <strong>ASP.NET 6 Fundamentals</strong> - Balta.io</li>
-            <li class="list-group-item"><i class="fas fa-certificate text-warning me-2"></i> <strong>Entity Framework Fundamentals</strong> - Balta.io</li>
-          </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; Francisco Jose Nardi Filho. Senior Full Stack Engineer & Technical Leader.</p>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <!-- Languages Section -->
-    <section id="languages" class="my-4 mb-5">
-      <h2>Languages</h2>
-      <div class="row">
-        <div class="col-md-3"><div class="card text-center p-3"><strong>English</strong><span class="text-muted">Fluent / Professional</span></div></div>
-        <div class="col-md-3"><div class="card text-center p-3"><strong>Portuguese</strong><span class="text-muted">Native</span></div></div>
-        <div class="col-md-3"><div class="card text-center p-3"><strong>Spanish</strong><span class="text-muted">Intermediate</span></div></div>
-        <div class="col-md-3"><div class="card text-center p-3"><strong>French</strong><span class="text-muted">Intermediate</span></div></div>
-      </div>
-    </section>
-  </div>
-
-  <!-- Footer -->
-  <footer class="text-center py-4 text-muted border-top border-secondary">
-    <div class="container">
-      <p class="mb-0">&copy; Francisco Jose Nardi Filho. Senior Full Stack Engineer & Technical Leader.</p>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
