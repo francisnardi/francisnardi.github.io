@@ -32,7 +32,7 @@
             :root {
                 --bg-body: #090d16;
                 --text-main: #e2e8f0;
-                --text-muted-custom: #94a3b8;
+                --text-muted-custom: #cbd5e1;
                 --card-bg: #1e293b;
                 --card-border: rgba(255, 255, 255, 0.05);
                 --section-title: #f8fafc;
@@ -45,7 +45,7 @@
             }
 
             .text-secondary {
-                color: #94a3b8 !important;
+                color: #cbd5e1 !important;
             }
             .text-muted {
                 color: #94a3b8 !important;
@@ -162,6 +162,17 @@
             padding-left: 1rem;
             margin-top: 1rem;
             margin-bottom: 1rem;
+        }
+
+        /* Specific Language Styling for High Contrast */
+        .lang-name {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .lang-level {
+            color: var(--text-muted-custom);
+            font-weight: 500;
         }
 
         footer {
@@ -432,21 +443,21 @@
                 <!-- Languages -->
                 <div class="card p-4">
                     <h4 class="section-title"><i class="fa-solid fa-language me-2"></i>Languages</h4>
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold small">English</span>
-                        <span class="text-muted small">Fluent / Professional</span>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="lang-name small">English</span>
+                        <span class="lang-level small">Fluent / Professional</span>
                     </div>
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold small">Portuguese</span>
-                        <span class="text-muted small">Native</span>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="lang-name small">Portuguese</span>
+                        <span class="lang-level small">Native</span>
                     </div>
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-semibold small">Spanish</span>
-                        <span class="text-muted small">Intermediate</span>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="lang-name small">Spanish</span>
+                        <span class="lang-level small">Intermediate</span>
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <span class="fw-semibold small">French</span>
-                        <span class="text-muted small">Intermediate</span>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="lang-name small">French</span>
+                        <span class="lang-level small">Intermediate</span>
                     </div>
                 </div>
 
