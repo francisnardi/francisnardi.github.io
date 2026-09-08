@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* CSS Variables for Light / Dark Auto-Adaptation */
+        /* CSS Variables for Light Mode */
         :root {
             --bg-body: #f8f9fa;
             --text-main: #2b2b2b;
@@ -27,13 +27,15 @@
             --sub-project-border: #cbd5e1;
             --accent-blue: #2563eb;
             --header-subtitle: #94a3b8;
+            --headings-color: #0f172a;
         }
 
+        /* High-Contrast Dark Mode */
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg-body: #090d16;
                 --text-main: #f8fafc;
-                --text-muted-custom: #e2e8f0; /* Cinza claro de alto contraste */
+                --text-muted-custom: #e2e8f0;
                 --card-bg: #1e293b;
                 --card-border: rgba(255, 255, 255, 0.08);
                 --section-title: #ffffff;
@@ -43,14 +45,26 @@
                 --tech-border: #3b82f6;
                 --sub-project-border: #64748b;
                 --accent-blue: #60a5fa;
-                --header-subtitle: #cbd5e1;
+                --header-subtitle: #e2e8f0;
+                --headings-color: #f8fafc;
             }
 
+            /* Força tipografia clara e legível em todos os textos internos */
+            body, p, li, span, div {
+                color: #f1f5f9;
+            }
+
+            /* Garante que títulos (incluindo h5 e h6 de formação e cargos) fiquem brancos/claros */
+            h1, h2, h3, h4, h5, h6, .fw-bold, .timeline-title {
+                color: #ffffff !important;
+            }
+
+            /* Sobrescreve classes utilitárias do Bootstrap */
             .text-secondary {
-                color: #f1f5f9 !important; /* Texto secundário bem legível */
+                color: #f1f5f9 !important;
             }
             .text-muted {
-                color: #e2e8f0 !important; /* Elimina o cinza apagado no modo dark */
+                color: #e2e8f0 !important;
             }
             .timeline-date {
                 color: #cbd5e1 !important;
