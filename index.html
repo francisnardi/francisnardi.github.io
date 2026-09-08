@@ -26,29 +26,37 @@
             --tech-border: #bfdbfe;
             --sub-project-border: #cbd5e1;
             --accent-blue: #2563eb;
+            --header-subtitle: #94a3b8;
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg-body: #090d16;
-                --text-main: #e2e8f0;
-                --text-muted-custom: #cbd5e1;
+                --text-main: #f8fafc;
+                --text-muted-custom: #e2e8f0; /* Cinza claro de alto contraste */
                 --card-bg: #1e293b;
-                --card-border: rgba(255, 255, 255, 0.05);
-                --section-title: #f8fafc;
+                --card-border: rgba(255, 255, 255, 0.08);
+                --section-title: #ffffff;
                 --border-line: #334155;
                 --tech-bg: #1e3a8a;
-                --tech-color: #93c5fd;
-                --tech-border: #2563eb;
-                --sub-project-border: #475569;
+                --tech-color: #bfdbfe;
+                --tech-border: #3b82f6;
+                --sub-project-border: #64748b;
                 --accent-blue: #60a5fa;
+                --header-subtitle: #cbd5e1;
             }
 
             .text-secondary {
-                color: #cbd5e1 !important;
+                color: #f1f5f9 !important; /* Texto secundário bem legível */
             }
             .text-muted {
-                color: #94a3b8 !important;
+                color: #e2e8f0 !important; /* Elimina o cinza apagado no modo dark */
+            }
+            .timeline-date {
+                color: #cbd5e1 !important;
+            }
+            .lang-level {
+                color: #cbd5e1 !important;
             }
             hr {
                 border-color: #334155 !important;
@@ -77,7 +85,7 @@
         }
 
         .header-subtitle {
-            color: #94a3b8;
+            color: var(--header-subtitle);
             font-size: 1.25rem;
             font-weight: 300;
         }
