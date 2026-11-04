@@ -19,7 +19,7 @@ A responsive static portfolio highlighting my professional background, core tech
 
 - **LinkedIn:** [linkedin.com/in/francisnardi](https://linkedin.com/in/francisnardi)
 - **GitHub:** [github.com/francisnardi](https://github.com/francisnardi)
-- **Email:** [francisnardi@gmail.com](mailto:francisnardi@gmail.com)
+- **Email:** [francisnardi@gmail.com](mailto:fnardifilho@gmail.com)
 
 ---
 
